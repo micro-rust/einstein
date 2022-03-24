@@ -1,0 +1,20 @@
+[package]
+name = "einstein"
+description = "Time and Size of structs logging library"
+
+version = "0.1.0"
+edition = "2021"
+
+readme = "README.md"
+repository = "https://github.com/micro-rust/einstein"
+
+license = "MIT OR Apache-2.0"
+
+categories = ["date-and-time"]
+keywords = ["log", "logging", "analysis", "tracing"]
+
+publish = true
+
+
+
+[dependencies]
