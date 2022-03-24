@@ -14,6 +14,7 @@ It has a simple API designed to be as out of the way as possible.
 Example:
 ```
 use einstein::TimeReport;
+use std::time::Duration;
 
 fn main() {
   let mut report = TimeReport::new("main-task");
@@ -32,10 +33,10 @@ fn main() {
   println!("Time to the end of the report:\n{}", report);
 }
 
-fn do_some_work(report: TimeReport) -> TimeReport {
+fn do_some_work(mut report: TimeReport) -> TimeReport {
   let start = report.start();
   
-  std::thread::sleep(1);
+  std::thread::sleep(Duration::from_secs(1));
   
   report.end(start);
   report
