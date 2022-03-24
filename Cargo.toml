@@ -11,7 +11,7 @@ repository = "https://github.com/micro-rust/einstein"
 license = "MIT OR Apache-2.0"
 
 categories = ["date-and-time"]
-keywords = ["log", "logging", "analysis", "tracing"]
+keywords = ["log", "logging", "analysis", "tracing", "no-dependencies"]
 
 publish = true
 

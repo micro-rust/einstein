@@ -22,8 +22,8 @@ pub struct TimeReport {
 
 impl TimeReport {
     /// Creates a new `TimeReport` with the given name.
-    pub fn new(name: String) -> TimeReport {
-        TimeReport { name, time: Duration::new(0, 0), subtask: Vec::new() }
+    pub fn new<T: AsRef<str>>(name: T) -> TimeReport {
+        TimeReport { name: format!("{}", name.as_ref()), time: Duration::new(0, 0), subtask: Vec::new() }
     }
 
     /// Starts the time report and returns the instant it begun.

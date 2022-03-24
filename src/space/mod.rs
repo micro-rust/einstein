@@ -18,7 +18,7 @@ pub trait SizeReport: Sized {
 
     /// Reports the full amount of memory occupied by this struct and its children.
     #[inline]
-    fn full(&self) -> usize {
+    fn fullsize(&self) -> usize {
     	Self::direct() + self.indirect() + self.children()
     }
 
