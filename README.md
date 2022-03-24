@@ -6,6 +6,13 @@ Time and Size of structs reporting library.
 This library aims to provide a simple and no dependencies way to track some debugging variables in your projects.
 It contains one struct (`TimeReport`) and one trait (`SizeReport`).
 
+## Usage
+Add this to you `Cargo.toml`
+```
+[dependencies]
+einstein = "0.1"
+```
+
 ## `TimeReport`
 
 `TimeReport` is a simple struct that can be used to keep track of the time it takes to complete tasks.
@@ -75,3 +82,8 @@ fn main() {
   println!("Indirect (Size collected of all children): {} bytes", map.children());
 }
 ```
+
+## License
+`einstein` is licensed under the terms of both MIT license and Apache License (Version 2.0).
+
+See [LICENSE-MIT] and [LICENSE-APACHE] for details.
